@@ -3,7 +3,7 @@ name: App CI
 on:
   workflow_dispatch:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
     paths:
       - "app/**"
       - ".github/workflows/app-ci.yml"
@@ -21,17 +21,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Debug: list repo
+      - name: Debug repo tree
         run: |
           pwd
           ls -la
           echo "---- app ----"
-          ls -la app || true
-          echo "---- workflows ----"
-          ls -la .github/workflows || true
+          ls -la app
 
-      - name: Build (no push) from app/
+      - name: Build (no push)
         working-directory: app
-        run: |
-          docker version
-          docker build -t app-ci-test .
+        run: docker build -t app-ci-test .
