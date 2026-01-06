@@ -11,3 +11,7 @@
 - Terraform CI with matrix strategy
 - Multi-environment validation
 - Safe CI checks for prod
+## Day 26
+- Terraform promotion flow
+- Dev to prod change control
+- Manual apply best practices
