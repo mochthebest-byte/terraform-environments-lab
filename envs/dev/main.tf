@@ -14,3 +14,6 @@ module "file" {
   filename = var.filename
   content  = var.content
 }
+output "app_image_full" {
+  value = "${var.app_image}:${var.app_tag}"
+}
