@@ -9,9 +9,15 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
 
+    strategy:
+      matrix:
+        env:
+          - dev
+          - prod
+
     defaults:
       run:
-        working-directory: envs/dev
+        working-directory: envs/${{ matrix.env }}
 
     steps:
       - name: Checkout
