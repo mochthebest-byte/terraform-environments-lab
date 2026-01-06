@@ -1,9 +1,13 @@
 name: App CI
 
 on:
+  workflow_dispatch:
+
   push:
+    branches: [ "main" ]
     paths:
       - "app/**"
+
   pull_request:
     paths:
       - "app/**"
