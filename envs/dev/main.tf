@@ -15,5 +15,6 @@ module "file" {
   content  = var.content
 }
 output "app_image_full" {
-  value = "${var.app_image}:${var.app_tag}"
+  description = "Full application image reference"
+  value       = "${var.app_image}:${var.app_tag}"
 }
