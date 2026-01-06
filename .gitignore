@@ -1,2 +1,4 @@
 **/.terraform/
 **/terraform.tfstate*
+envs/dev/*.txt
+envs/prod/*.txt
