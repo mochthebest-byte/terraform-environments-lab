@@ -15,3 +15,7 @@
 - Terraform promotion flow
 - Dev to prod change control
 - Manual apply best practices
+## Day 26
+- Terraform promotion flow
+- Dev to prod change control
+- Manual apply best practices
